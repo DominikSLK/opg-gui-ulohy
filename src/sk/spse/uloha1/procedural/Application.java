@@ -28,6 +28,12 @@ public class Application extends javafx.application.Application {
         TextField celsiusField = new TextField("0");
         TextField fahrenheitField = new TextField("0");
 
+        celsiusField.setPadding(new Insets(10, 20, 10, 20));
+        fahrenheitField.setPadding(new Insets(10, 20, 10, 20));
+
+        Label labelC = new Label("°C");
+        Label labelF = new Label("°F");
+
         celsiusField.setOnKeyTyped(e -> {
             celsius = Double.parseDouble(celsiusField.getText());
             fahrenheit = (celsius * 9.0 / 5.0) + 32.0;
@@ -42,8 +48,8 @@ public class Application extends javafx.application.Application {
             celsiusField.setText(String.valueOf(celsius));
         });
 
-        HBox celsiusBox = new HBox(20, labelCelsia, celsiusField);
-        HBox fahrenheitBox = new HBox(20, labelFahrenheit, fahrenheitField);
+        HBox celsiusBox = new HBox(20, labelCelsia, celsiusField, labelC);
+        HBox fahrenheitBox = new HBox(20, labelFahrenheit, fahrenheitField, labelF);
 
         celsiusBox.setAlignment(Pos.CENTER_RIGHT);
         fahrenheitBox.setAlignment(Pos.CENTER_RIGHT);
