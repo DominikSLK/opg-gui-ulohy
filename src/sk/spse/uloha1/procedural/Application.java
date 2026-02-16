@@ -1,11 +1,12 @@
 package sk.spse.uloha1.procedural;
 
 import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 ///
@@ -16,22 +17,38 @@ import javafx.stage.Stage;
 
 public class Application extends javafx.application.Application {
 
-    private int counter = 0;
+    private double celsius = 0;
+    private double fahrenheit = 0;
 
     @Override
     public void start(Stage stage) {
-        Label label = new Label("Počítadlo:");
+        Label labelCelsia = new Label("Stupne Celsia");
+        Label labelFahrenheit = new Label("Stupne Fahrenheita");
 
-        TextField textField = new TextField("0");
+        TextField celsiusField = new TextField("0");
+        TextField fahrenheitField = new TextField("0");
 
-        Button button = new Button("Plus 1");
+        celsiusField.setOnKeyTyped(e -> {
+            celsius = Double.parseDouble(celsiusField.getText());
+            fahrenheit = (celsius * 9.0 / 5.0) + 32.0;
 
-        button.setOnAction(e -> {
-            counter++;
-            textField.setText(String.valueOf(counter));
+            fahrenheitField.setText(String.valueOf(fahrenheit));
         });
 
-        HBox root = new HBox(20, label, textField, button);
+        fahrenheitField.setOnKeyTyped(e -> {
+            fahrenheit = Double.parseDouble(fahrenheitField.getText());
+            celsius = (fahrenheit - 32.0) * 5.0 / 9.0;
+
+            celsiusField.setText(String.valueOf(celsius));
+        });
+
+        HBox celsiusBox = new HBox(20, labelCelsia, celsiusField);
+        HBox fahrenheitBox = new HBox(20, labelFahrenheit, fahrenheitField);
+
+        celsiusBox.setAlignment(Pos.CENTER_RIGHT);
+        fahrenheitBox.setAlignment(Pos.CENTER_RIGHT);
+
+        VBox root = new VBox(20, celsiusBox, fahrenheitBox);
         root.setPadding(new Insets(10));
 
         Scene scene = new Scene(root);
