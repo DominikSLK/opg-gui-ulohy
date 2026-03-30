@@ -6,26 +6,38 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox prefHeight="108.0" prefWidth="373.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sk.spse.uloha1.declarative.Controller">
+<VBox prefHeight="138.0" prefWidth="485.0" styleClass="main" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sk.spse.uloha1.declarative.Controller">
    <children>
       <HBox alignment="CENTER_RIGHT" centerShape="false" prefHeight="22.0" prefWidth="368.0" spacing="20">
          <padding>
             <Insets topRightBottomLeft="10" />
          </padding>
          <children>
-            <Label text="Stupne Celsia" />
+            <Label text="Stupne Celsia:">
+               <HBox.margin>
+                  <Insets right="-15.0" />
+               </HBox.margin></Label>
             <TextField fx:id="celsiusField" onKeyTyped="#convertToCtoF" style="-fx-padding: 10 20 10 20;" text="0" />
-            <Label text="°C" />
+            <Label text="°C">
+               <HBox.margin>
+                  <Insets left="-15.0" />
+               </HBox.margin></Label>
          </children>
       </HBox>
-      <HBox alignment="CENTER_RIGHT" prefHeight="54.0" prefWidth="395.0" spacing="20">
+      <HBox alignment="CENTER_RIGHT" prefHeight="73.0" prefWidth="447.0" spacing="20">
          <padding>
             <Insets topRightBottomLeft="10" />
          </padding>
          <children>
-            <Label text="Stupne Fahrenheita" />
+            <Label text="Stupne Fahrenheita:">
+               <HBox.margin>
+                  <Insets right="-15.0" />
+               </HBox.margin></Label>
             <TextField fx:id="fahrenheitField" onKeyTyped="#convertToFtoC" style="-fx-padding: 10 20 10 20;" text="0" />
-            <Label text="°F" />
+            <Label text="°F">
+               <HBox.margin>
+                  <Insets left="-15.0" />
+               </HBox.margin></Label>
          </children>
       </HBox>
    </children>

@@ -1,0 +1,26 @@
+.label {
+    -fx-text-fill: #930b1e;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-font-family: Calibri;
+}
+
+.text-field {
+    -fx-opacity: 0.8;
+    -fx-text-fill: #930b1e;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-border-color: #00000000;
+    -fx-border-width: 2px;
+    -fx-font-family: Calibri;
+}
+
+.text-field:focused {
+    -fx-border-width: 2px;
+    -fx-border-color: #930b1e;
+}
+
+.main {
+    -fx-background-image: url("calculator.jpeg");
+    -fx-background-size: 550;
+}
