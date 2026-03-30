@@ -14,7 +14,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="344.0" prefWidth="607.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sk.spse.uloha3.declarative.Controller">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="344.0" prefWidth="607.0" styleClass="main" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sk.spse.uloha3.declarative.Controller">
    <left>
       <ImageView fx:id="obrazok" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
          <image>
@@ -33,7 +33,7 @@
                   <Font size="17.0" />
                </font>
             </TextArea>
-            <Hyperlink focusTraversable="false" onAction="#openLink" text="https://www.spse-po.sk">
+            <Hyperlink focusTraversable="false" onAction="#openLink" styleClass="link" text="https://www.spse-po.sk">
                <font>
                   <Font size="15.0" />
                </font>
@@ -42,7 +42,7 @@
       </VBox>
    </center>
    <top>
-      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Stredná priemyselná škola elektrotechnická, Prešov" wrappingWidth="445.419921875" BorderPane.alignment="CENTER">
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Stredná priemyselná škola elektrotechnická, Prešov" wrappingWidth="445.419921875" BorderPane.alignment="CENTER">
          <font>
             <Font size="20.0" />
          </font>
@@ -59,7 +59,7 @@
                   <HBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" onMouseDragReleased="#rotuj">
                      <children>
                         <Slider fx:id="slider" onMouseDragged="#rotuj" />
-                        <Button mnemonicParsing="false" onAction="#close" prefHeight="27.0" prefWidth="136.0" text="Beriem na vedomie">
+                        <Button mnemonicParsing="false" onAction="#close" prefHeight="31.0" prefWidth="180.0" text="Beriem na vedomie">
                            <opaqueInsets>
                               <Insets />
                            </opaqueInsets>
