@@ -17,7 +17,7 @@
                <children>
                   <VBox fx:id="vbox1" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #0000ff;">
                      <children>
-                        <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="img1" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../soup2.png" />
                            </image>
@@ -26,7 +26,7 @@
                   </VBox>
                   <VBox fx:id="vbox2" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #ffff00;" TilePane.alignment="CENTER">
                      <children>
-                        <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="img2" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../soup2.png" />
                            </image>
@@ -35,7 +35,7 @@
                   </VBox>
                   <VBox fx:id="vbox3" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #008000;">
                      <children>
-                        <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="img3" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../soup2.png" />
                            </image>
@@ -44,7 +44,7 @@
                   </VBox>
                   <VBox fx:id="vbox4" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #ff0000;">
                      <children>
-                        <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="img4" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../soup2.png" />
                            </image>
