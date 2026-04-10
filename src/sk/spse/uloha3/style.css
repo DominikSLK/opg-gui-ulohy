@@ -25,6 +25,7 @@
 
 .text-area {
     -fx-font-family: Serif;
+    -fx-font-size: 17px;
     -fx-background-color: rgba(255,255,255,0.67);
 }
 
@@ -42,8 +43,18 @@
 
 .link {
     -fx-font-family: Calibri;
+    -fx-font-size: 15px;
     -fx-effect: dropshadow(gaussian, #dee1ea, 20, 0.9, 0, 0);
     -fx-font-weight: bold;
+}
+
+.link:hover,
+.link:visited,
+.link:hover:visited,
+.link:armed,
+.link:focused {
+    -fx-font-size: 15px;
+    -fx-underline: false;
 }
 
 #obrazok {
