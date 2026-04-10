@@ -14,7 +14,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="344.0" prefWidth="607.0" styleClass="main" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sk.spse.uloha3.declarative.Controller">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="294.0" prefWidth="607.0" styleClass="main" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sk.spse.uloha3.declarative.Controller">
    <left>
       <ImageView fx:id="obrazok" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
          <image>
@@ -28,7 +28,7 @@
             <Insets left="10.0" />
          </BorderPane.margin>
          <children>
-            <TextArea editable="false" focusTraversable="false" prefHeight="211.0" prefWidth="427.0" text="Vážení rodičia a milí žiaci základných škôl, &#10;&#10;radi by sme Vás privítali v priestoroch našej školy&#10;dňa 10.02.2026 (utorok) od 13.00 do 17.00 h na&#10;Dni otvorených dverí, kde by sme Vám chceli&#10;predstaviť naše študijné odbory." wrapText="true">
+            <TextArea editable="false" focusTraversable="false" prefHeight="166.0" prefWidth="427.0" text="Vážení rodičia a milí žiaci základných škôl, &#10;&#10;radi by sme Vás privítali v priestoroch našej školy&#10;dňa 10.02.2026 (utorok) od 13.00 do 17.00 h na&#10;Dni otvorených dverí, kde by sme Vám chceli&#10;predstaviť naše študijné odbory." wrapText="true">
                <font>
                   <Font size="17.0" />
                </font>
