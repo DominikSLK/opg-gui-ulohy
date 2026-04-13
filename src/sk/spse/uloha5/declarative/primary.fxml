@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<BorderPane prefHeight="277.0" prefWidth="464.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sk.spse.uloha5.declarative.Controller">
+<BorderPane prefHeight="323.0" prefWidth="475.0" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sk.spse.uloha5.declarative.Controller">
    <center>
       <TableView fx:id="tabulka" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
         <columns>
@@ -28,7 +28,7 @@
       </TableView>
    </center>
    <bottom>
-      <HBox alignment="CENTER_RIGHT" prefHeight="23.0" prefWidth="305.0" BorderPane.alignment="CENTER">
+      <HBox fx:id="button_box" alignment="CENTER_RIGHT" prefHeight="23.0" prefWidth="305.0" BorderPane.alignment="CENTER">
          <children>
             <Button mnemonicParsing="false" text="Pridaj potravinu">
                <HBox.margin>
